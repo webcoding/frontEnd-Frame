@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>专题模板</title>
+<meta name="keywords" content="专题关键字" />
+<meta name="description" content="专题网页描述" />
+<link rel="stylesheet" href="http://www.lvmama.com/zt/000global/styles/zt_global.css">
+<link rel="stylesheet" href="css/zt_style.css">
+</head>
+<body>
+<script src="http://www.lvmama.com/zt/000global/js/ztTopMenu.js"></script>
+<div class="wrapper">
+<div class="wrap" style="width:998px;">
+	<div class="banner" style="margin:0 0 0 -2px">
+    	<img src="img/banner_01.jpg" alt="">
+    	<img src="img/banner_02.jpg" alt="">
+    	<img src="img/banner_03.jpg" alt="">
+    	<img src="img/banner_04.jpg" alt="">
+    </div><!-- //div banner -->
+	
+    <!--页面主体部分-->
+    <div class="content">
+    	<div id="zt_box1" class="zt_box1">
+		    
+		</div><!-- //div zt_box1 -->
+		
+    	<div id="zt_box2" class="zt_box2">
+		    
+		</div><!-- //div zt_box2 -->
+		
+    	<div id="zt_box3" class="zt_box3">
+		    
+		</div><!-- //div zt_box3 -->
+		
+    	<div id="zt_box4" class="zt_box4">
+		    
+		</div><!-- //div zt_box4 -->
+		
+	</div><!-- //div content -->
+</div><!-- //div wrap -->
+
+</div><!-- //div wrapper -->
+<!--[if ie 6]>
+<script src="http://pic.lvmama.com/js/zt/DD_belatedPNG.js"></script> 
+<script>DD_belatedPNG.fix('.ie6png');</script>
+<![endif]-->
+<script src="http://pic.lvmama.com/js/jquery142.js"></script>
+<script src="http://pic.lvmama.com/js/ui/lvmamaUI/lvmamaUI.js"></script>
+
+<script type="text/javascript">
+var login;
+function validate_login(){
+   $("a.div_loginreg_close").click();
+	if(login==1){
+	  window.open("http://www.lvmama.com/myspace/share/comment.do");
+	}else if(login==2){
+      window.open("http://www.lvmama.com/myspace/share/comment.do ");
+	}
+}
+
+$(function(){
+    $("#float_right i.xh_close").click(function(){
+        $("#float_right").hide();
+	});
+	
+
+	
+	$("#active_detail").click(function(e){
+	   $("#overlay").show().height($(document).height());
+	   var _top=$(document).scrollTop();
+	   $("#xh_dialog").css("top",_top + 80).fadeIn("slow");
+	   e.stopPropagation();
+	})
+	$("body").click(function(e){
+	   // e.stopPropagation();
+	    $("#xh_dialog,#overlay").hide();
+		//return false;
+		 //e?e.stopPropagation():e.cancelBubble = true;
+	});	
+	$("#xh_dialog i.xh_close").click(function(){
+        $("#xh_dialog,#overlay").hide();
+	});
+	
+	$('.xh_login').click(function(){ 
+		$(UI).ui("login"); 
+	});
+	
+	$('.xh_login_l').click(function(){
+		login=1;
+		$(UI).ui("login"); 
+	});
+	$('.xh_login_d').click(function(){ 
+		login=2;
+		$(UI).ui("login"); 
+	});
+    
+
+	
+});
+</script>
+
+<script src="http://pic.lvmama.com/js/common/losc.js"></script>
+</body>
+</html>

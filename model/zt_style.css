@@ -1,0 +1,66 @@
+/* Create:2012-12-04 专题基础样式  */
+/* = Public Styles */
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,figure,menu{margin:0;padding:0;}
+body,button,input,select,textarea{font:12px/22px Tahoma,Arial,"\5b8b\4f53",Verdana,Geneva,sans-serif}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+table{border-collapse:collapse;border-spacing:0}
+ol,ul{list-style:none}.bc{margin-left:auto;margin-right:auto}
+img{border:none;vertical-align:top}em,i,dfn{font-style:normal}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+/* 清除浮动 */
+.clearfix:after,.wrap:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}
+.clearfix,.wrap{*zoom:1}/* for IE6 IE7 */
+.wrap{ margin-left:auto; margin-right:auto; width:980px;}
+/* 底部样式 */
+.ztfooter{ text-align:center; padding-bottom:10px;width:980px; margin:20px auto 0; overflow:hidden;position:relative;z-index:11;}
+/* = ZT Custom Styles */
+dfn,dfn i{color:#f8760d;font-family: Arial;}
+.wrapper{background:url(../img/top_bg.jpg) top center no-repeat;}
+a{color:#0077cc;}
+a:hover{ color:#cc0066;}
+body{background:url(../img/bg.jpg) bottom center repeat-y;}
+.body_bg{background:url(../img/footer_bg.jpg) bottom center no-repeat;margin-bottom:-20px;}
+.banner{background:url(http://pic.lvmama.com/img/new_v/ui_scrollLoading/loadingGIF46px.gif) center center no-repeat; display:block; text-align:center;position:relative;z-index:10;text-align:center}
+.banner img{position:relative;z-index:9;}
+.flash{position:absolute;z-index:11;margin:0 -0px;top:50px;}
+.banner h1{text-indent:-9999px; position:absolute;top:0;}
+.banner {overflow:hidden}
+/* content */
+#tongji{height:0;overflow:hidden}
+.wrap{width:990px;}
+.content{position:relative;height:1960px;padding:0 5px;z-index:12}
+.zt_box1,.zt_box2,.zt_box3,.zt_box4,.zt_box5{position:relative;z-index:11;}
+.fliter{background-color:#fff;filter:alpha(opacity=80);opacity:.8;position:absolute;top:0;left:0.5%;width:99%;height:100%;z-index:10;padding-bottom:;}
+
+.xh_link{position:absolute;display:inline-block;width:120px;height:30px; filter:alpha(opacity=0);opacity:0; background:red}
+
+
+
+/* 右侧浮动 */
+#float_right{position:fixed;left:50%;margin-left:530px;top:340px;z-index:300;_position:absolute;_top:expression(eval(document.documentElement.scrollTop+100))}
+.quick_box{width:135px;height:184px;position:relative;background:url(../img/quick.png) no-repeat;text-align:center;font-family: "Microsoft YaHei";font-size:16px;font-weight:500;}
+.quick_box .block_link{display:block;position:absolute;left:0;top:0;width:100%;height:100%}
+.quick_box ul{padding-top:20px;}
+.quick_box li{height:35px;line-height:35px;}
+.quick_box a{font-weight:bold;color:#9a0101;display:block}
+.quick_box a:hover{text-decoration:none}
+.quick_box a.gotop{font-weight:500}
+ i.xh_close{display:block;position:absolute;cursor:pointer;font-style:normal;text-indent:0;color:#ddd; text-align:right;top:-20px;right:5px;font-size:14px; width:50px;}
+
+#overlay{position:absolute;top:0;left:0;z-index:1000;width:100%;height:100%;background:#000;filter:alpha(opacity=80);opacity:0.8;display:none;}
+.xh_dialog{position:absolute;left:50%;background:#fff;margin-left:-490px;font-family: "Microsoft YaHei";font-size:14px;font-weight:500; width:980px;padding:10px;z-index:2000;top:60px;display:none;height:90%;}
+.xh_dialog h2{font-size:18px;font-weight:500;border-bottom:7px solid #ccc;text-align:center;height:30px; line-height:30px; padding-bottom:5px;}
+.xh_dialog h3,.xh_dialog h4{font-size:14px;font-weight:bold;height:24px;line-height:24px;margin:5px 0}
+.xh_dialog h3{border-top:1px dashed #ccc;padding-top:5px;}
+.xh_dialog strong{color:#b90000;font-weight:bold;}
+.xh_dialog b{color:#b90000;font-size:16px;font-weight:500}
+.xh_dialog p{margin-bottom:10px;}
+.xh_dialog  i.xh_close{font-size:18px;top:-24px;right:0;height:24px;line-height:24px;font-weight:bold}
+.xh_dialog .box{overflow:hidden;height:98.5%;border:3px solid green}
+#draggable{cursor: move}
+
+
+
+
+
